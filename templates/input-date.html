@@ -1,0 +1,8 @@
+<title>Check-Date</title>
+{% extends "welcome.html" %} {% block content %}
+<script src="{{ url_for('static', filename='exception-handling.js')}}"</script></script>
+<form name="check-date" action="/getdate" onsubmit="return checkdate()" method="post">
+  <input class="insert-input" type="date" name="chosendate" />
+  <input class="insert-input" type="submit" value="check" />
+</form>
+{% endblock %}

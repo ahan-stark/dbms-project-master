@@ -1,0 +1,28 @@
+<title>Food menu</title>
+{% extends "welcome.html" %}{% block content %}
+<h1 class="food-menu">Food Menu</h1>
+<div class="table-room"> 
+<table class="table table-success table-striped">
+  <tr>
+    <th class="table-dark">Food Id</th>
+    <th class="table-dark">Food Name</th>
+    <th class="table-dark">Food Timing</th>
+    <th class="table-dark">Food Cost</th>
+    <th class="table-dark">Book Food</th>
+  </tr>
+  {% for food_details in foodmenu %}
+  <tr>
+    <td>{{food_details.id}}</td>
+    <td>{{food_details.name}}</td>
+    <td>{{food_details.timing}}</td>
+    <td>{{food_details.price}}</td>
+    <td>
+      <a href="/book_food/{{food_details.name}}/{{food_details.price}}"
+        >book_food</a
+      >
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+<title>Rooms</title>
+<link
+rel="stylesheet"
+type="text/css"
+href="{{ url_for('static',filename='styles.css') }}"
+/>
+{% extends "welcome.html" %}{% block content %}
+
+<div class="table-room"> 
+  <table class="table table-success table-striped">
+    <tr>
+      <th class="table-dark">Room no</th>
+      <th class="table-dark">Room cost</th>
+    </tr>
+    {% for dis in disprooms %}
+    <tr>
+      <td>{{dis.num}}</td>
+      <td>{{dis.cost}}</td>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+<div class="sort">
+<a href="/sort" class="link-info">Sort</a>
+</div>
+{% endblock %}
+

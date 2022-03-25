@@ -1,0 +1,176 @@
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.logo {
+  border-radius: 50%;
+  max-width: 12em;
+  margin: 0 34em;
+  margin-top: 18px;
+  animation-name: disappear;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.navbar-adjust {
+  padding: 8px;
+  margin-top: 18px;
+  width: 51em;
+  margin-left: 12em;
+}
+.navbar {
+  background-color: transparent !important;
+} 
+#navbarcontent {
+  background-color: aqua;
+}
+.navbar-brand {
+  background-color: yellow;
+  color: black !important;
+  border-radius: 8px;
+}
+.welcome-message {
+  margin-top: 26px;
+  text-align: center;
+  padding-top: 36px;
+  color: black;
+  font-size: 4.5em;
+  background-color: yellow;
+  height: 180px;
+  border: 1px solid black;
+  width: 10em;
+  margin-left: 4.1em;
+  border-radius: 41px;
+}
+#videoBG {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.table-room {
+  height: 200px;
+  width: 48em;
+  margin-left: 17em;
+}
+table,
+td,
+th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  height: 70px;
+}
+.sort {
+  margin-top: 24em;
+  margin-left: 17em;
+  width: 32px;
+  height: 25px;
+}
+.insert-input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+  width: 40em;
+  text-align: center;
+  margin-left: 19em;
+}
+.custom-value {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  width: 40em;
+  text-align: center;
+  margin-left: 19em;
+}
+.custom-value select {
+  background-color: white;
+  border: 1px;
+  font-size: 18px;
+}
+input[type="submit"] {
+  background-color: yellow;
+  width: 8em;
+  margin-left: 34em;
+}
+.enter-food {
+  margin-left: 7.5em;
+  text-align: center;
+  font-size: 3em;
+  color: darkviolet;
+  background-color: yellow;
+  width: 17em;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+.food-menu {
+  text-align: center;
+  font-size: 3em;
+  color: darkviolet;
+  background-color: yellow;
+  width: 9em;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.about {
+  text-indent: 50px;
+  font-size: 1.25em;
+  padding-right: 2em;
+  padding-left: 2em;
+  background: lightyellow;
+  width: 58em;
+  height: 13em;
+  margin: auto;
+  margin-top: 6px;
+  border-radius: 30px;
+}
+.creators {
+  font-stretch: condensed;
+}
+ul.creators li {
+  width: auto;
+  float: left;
+  margin-left: 3.4em;
+  font-size: 1.8em;
+  background: lightcyan;
+  color: red;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.owner {
+  color: blue;
+  text-align: center;
+  font-size: 3em;
+  margin-top: 15px;
+}
+.success{
+  text-align: center;
+  margin-top: 1em;
+  font-size: 6em;
+  color: red;
+}

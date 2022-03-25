@@ -1,0 +1,21 @@
+<title>Book-Food</title>
+{% extends "welcome.html" %}
+    {% block content %}
+    <form action="/foodbook_details" method="post">
+      <input value="{{food_name}}" name="food_name" />
+      <input type="number" name="customer_id" placeholder="customer id" />
+      <input value="{{food_cost}}" name="food_price" id="food-cost" readonly/>
+      <input
+        type="number"
+        value="1"
+        name="quantity"
+        placeholder="food quantity"
+        id="food-quantity"
+      />
+      <input type="button" value="check total" id="check-total" />
+      <input type="number" name="total_amount" id="total" placeholder="total amount" readonly/>
+      <input type="submit" value="book" id="" />
+      <script src="{{ url_for('static', filename='food_totalcost.js')}}"</script></script>
+    </form>
+    {% endblock %}
+

@@ -1,0 +1,28 @@
+<title>Book-Rooms</title>
+{% extends "welcome.html" %}{% block content %}
+
+<h1 class="dis-room"></h1>
+  
+
+  
+  <table class="table table-success table-striped">
+    <tr>
+      <th>Room no</th>
+      <th>Room cost</th>
+      <th>Book Room</th>
+    </tr>
+    {% for dis in disprooms %}
+    <tr>
+      <td>{{dis.num}}</td>
+      <td>{{dis.cost}}</td>
+      <td>
+        <a href="/book/{{dis.num}}/{{dis.cost}}/{{chosendate}}">book</a>
+
+        </td>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+  
+</h1>
+{% endblock %}

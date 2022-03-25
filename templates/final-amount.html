@@ -1,0 +1,40 @@
+<title>Final-Billing</title>
+{% extends "welcome.html" %} {% block content %}
+<table class="table table-success table-striped">
+    <tr>
+    <th class="table-dark">Food Name</th>
+    <th class="table-dark">Food Price</th>
+    </tr>
+    {% for food in totalbilling_food %}
+    <tr>
+    <td><input type="text" value="{{food.name}}" readonly name="food_name"></td>
+    <td><input type="text" class="food-amt" value="{{food.amt}}" readonly name="food_cost"></td>
+    </tr>
+    {% endfor %}
+</table>
+<table class="table table-success table-striped">
+    <tr>
+        <th class="table-dark">Room Id</th>
+        <th class="table-dark">Customer Name</th>
+        <th class="table-dark">Date</th>
+        <th class="table-dark">Cost</th>
+        </tr>
+        {% for room in totalbilling_room %}
+        <tr>
+            <td><input type="text" value="{{room.room_id}}" readonly name="room-id"></td>
+            <td><input type="text" value="{{room.name}}" readonly name="cust-name"></td>
+            <td><input type="text" value="{{room.date}}" readonly name="booking-date"></td>
+            <td><input type="text" value="{{room.cost}}" readonly class="room-cost" name="room-cost"></td>
+        </tr>
+        {% endfor %}
+</table>
+<table class="table table-success table-striped">
+    <tr>
+        <th class="table-dark">Final Amount</th>
+    </tr>
+    <tr>
+        <td><input type="text" id="finalamt" readonly></td>
+    </tr>
+</table>
+<script src="{{ url_for('static', filename='finalbilling.js')}}"</script></script>
+{% endblock %}

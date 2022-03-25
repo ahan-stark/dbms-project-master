@@ -1,0 +1,8 @@
+<title>enter cust-id</title>
+{% extends "welcome.html" %} {% block content %}
+<script src="{{ url_for('static', filename='exception-handling.js')}}"</script></script>
+<form name="aadhar-no" action="calculate_fianlamt" onsubmit="return checkid()" method="post">
+    <input class="insert-input"  type="number" name="cust_id" placeholder="aadhar number" >
+    <input class="insert-input" type="submit">
+</form>
+{% endblock %}
